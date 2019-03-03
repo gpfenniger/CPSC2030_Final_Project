@@ -1,0 +1,40 @@
+/*
+    Theme Name: CPSC2030 Final Project - Griffin
+    Author" Griffin Pfenniger
+    Description: 
+        a custom wordpress theme designed for my CPSC 2030
+        class on web development. It is made to display the
+        drawings of one of my coworkers.
+    Version: 0.0.1
+*/
+
+.side {
+    background-color: red;
+}
+
+.main {
+    background-color: green;
+}
+
+.page-nav {
+    background-color: green;
+    list-style-type: none;
+    text-align: center;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 460px) {
+    div {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
