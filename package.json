@@ -1,0 +1,15 @@
+{
+  "name": "cpsc2030-final-project",
+  "description": "A webpage for my CPSC2030 final project at Langara College",
+  "version": "1.0.0",
+  "repository": "https://github.com/gpfenniger/CPSC2030_Final_Project",
+  "author": "Griffin <pfenniger.griffin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@prettier/plugin-php": "^0.10.2",
+    "prettier": "^1.16.4"
+  },
+  "scripts": {
+    "prettier": "prettier"
+  }
+}
