@@ -2,12 +2,12 @@
 <html lang="en">
 
     <?php require_once('header.php'); ?>
+    <link href="<?php echo get_bloginfo( 'template_directory' );?>/home.css" rel="stylesheet">
 
     <body>
         <div class="wrapper">
-            <?php require_once('sidebar.php'); ?>
+            <?php require_once('nav.php'); ?>
             <div class="main">
-                Posts go here
                 <?php 
                     if ( have_posts() ) : while ( have_posts() ) : the_post();
             

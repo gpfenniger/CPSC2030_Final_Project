@@ -1,8 +1,11 @@
 <nav>
     <h1>Navbar</h1>
     <ul class="nav-menu">
-        <li>Hello</li>
-        <li>A page</li>
+        <li><a href="<?php echo get_bloginfo( 'wpurl' );?>">
+            <!-- site title -->
+            Maya's Drawing Site
+        </a></li>
+        <?php wp_list_pages( '&title_li=' ); ?>
     </ul>
 </nav>
 
@@ -12,6 +15,7 @@
     });
 
     $("nav").on("mouseout", () => {
-        $(".nav-menu").css("display", "none");
+        if ($(window).width() < 480)
+            $(".nav-menu").css("display", "none");
     });
 </script>

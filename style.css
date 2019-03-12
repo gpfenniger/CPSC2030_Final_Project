@@ -36,9 +36,6 @@
   text-align: center;
 }
 
-.blog-post p {
-}
-
 .blog-post blockquote {
   margin: 5px;
   padding: 10px;
@@ -46,13 +43,28 @@
 }
 
 @media (min-width: 460px) {
-  div {
-    padding: 10px;
-    margin: 10px;
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   .wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
+    height: 100%;
+  }
+
+  .main {
+    background-color: rgb(238, 238, 238);
+    height: 100%;
+  }
+
+  .blog-post {
+    padding: 40px;
+  }
+
+  .blog-post div {
+    padding: 10px;
+    margin: 10px;
   }
 }
