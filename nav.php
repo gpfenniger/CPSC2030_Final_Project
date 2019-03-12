@@ -10,12 +10,17 @@
 </nav>
 
 <script>
-    $("nav").on("mouseover", () => {
-        $(".nav-menu").css("display", "inline");
-    });
+    if ($(window).width() < 480) {
+        $("nav").on("mouseover", () => {
+            $(".nav-menu").css("display", "inline");
+        });
 
-    $("nav").on("mouseout", () => {
-        if ($(window).width() < 480)
+        $("nav").on("click", () => {
+            $(".nav-menu").slideToggle();
+        });
+
+        $("nav").on("mouseout", () => {
             $(".nav-menu").css("display", "none");
-    });
+        });
+    }
 </script>

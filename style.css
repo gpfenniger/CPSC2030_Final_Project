@@ -8,18 +8,8 @@
     Version: 0.0.1
 */
 
-.side {
-  background-color: beige;
-}
-
 .main {
   background-color: white;
-}
-
-.page-nav {
-  background-color: burlywood;
-  list-style-type: none;
-  text-align: center;
 }
 
 .page-nav a {
