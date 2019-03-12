@@ -1,0 +1,23 @@
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+}
+
+.nav-menu {
+  display: none;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-menu li:hover {
+  background-color: lightblue;
+}
