@@ -9,32 +9,50 @@
 */
 
 .side {
-    background-color: red;
+  background-color: beige;
 }
 
 .main {
-    background-color: green;
+  background-color: white;
 }
 
 .page-nav {
-    background-color: green;
-    list-style-type: none;
-    text-align: center;
+  background-color: burlywood;
+  list-style-type: none;
+  text-align: center;
 }
 
 .page-nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+
+.blog-post {
+  padding: 5px;
+}
+
+.blog-post-title,
+.blog-post-meta {
+  text-align: center;
+}
+
+.blog-post p {
+}
+
+.blog-post blockquote {
+  margin: 5px;
+  padding: 10px;
+  border-left: solid black 3px;
 }
 
 @media (min-width: 460px) {
-    div {
-        padding: 10px;
-        margin: 10px;
-    }
+  div {
+    padding: 10px;
+    margin: 10px;
+  }
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
 }
