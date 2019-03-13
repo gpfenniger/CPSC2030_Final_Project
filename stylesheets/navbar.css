@@ -34,5 +34,6 @@ nav {
   nav {
     background-color: white;
     height: 100%;
+    padding-top: 40px;
   }
 }

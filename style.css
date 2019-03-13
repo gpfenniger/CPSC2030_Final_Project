@@ -5,6 +5,11 @@
         a custom wordpress theme designed for my CPSC 2030
         class on web development. It is made to display the
         drawings of one of my coworkers.
+    Influenced By:
+      WordPress 2019 Default Theme
+      W3 Portfolio Template: https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm
+      CSS Tricks - Image Thumbnail: https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
+      Quora: https://quora.com
     Version: 0.0.1
 */
 
@@ -29,7 +34,8 @@
 .blog-post blockquote {
   margin: 5px;
   padding: 10px;
-  border-left: solid black 3px;
+  border-left: solid rgb(70, 76, 82) 3px;
+  color: rgb(90, 103, 117);
 }
 
 @media (min-width: 460px) {
@@ -40,7 +46,7 @@
 
   .wrapper {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     height: 100%;
   }
 
@@ -56,5 +62,9 @@
   .blog-post div {
     padding: 10px;
     margin: 10px;
+  }
+
+  .posts {
+    padding: 40px;
   }
 }
