@@ -1,5 +1,5 @@
 <nav>
-    <h1>Maya's Art Corner</h1>
+    <h1><?php echo get_bloginfo('name'); ?></h1>
     <ul class="nav-menu">
         <li><a href="<?php echo get_bloginfo('wpurl'); ?>">
             Home

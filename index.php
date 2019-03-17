@@ -3,10 +3,6 @@
 
     <?php require_once 'header.php'; ?>
 
-    <!-- Page specific CSS -->
-    <link href="<?php echo get_bloginfo(
-      'template_directory'
-    ); ?>/stylesheets/home.css" rel="stylesheet">
 
     <body>
         <div class="wrapper">
@@ -22,7 +18,8 @@
                 while (have_posts()):
                   the_post(); ?>
               <div class="post">    
-                  <?php if (get_the_post_thumbnail($post_id) != '') {
+                  <?php
+                  if (get_the_post_thumbnail($post_id) != '') {
                     echo '<a href="';
                     the_permalink();
                     echo '" class="thumbnail-wrapper">';
@@ -36,7 +33,17 @@
                     echo catch_that_image();
                     echo '" alt="" />';
                     echo '</a>';
-                  } ?>      
+                  }
+                  echo '<div class="stat-block">';
+                  echo '<p>Likes: 0</p>';
+                  echo '<p>Comments:';
+                  if ($post_id != '') {
+                    echo get_the_id();
+                    get_num_of_comments($post_id);
+                  }
+                  echo '</p></div>';
+                  ?>     
+                  
               </div>
               <?php
                 endwhile; ?>
@@ -49,6 +56,7 @@
               endif; ?>
 
               </div>
+              <?php require_once 'footer.php'; ?>
             </div>
         </div>
     </body>

@@ -1,4 +1,11 @@
-<?php function catch_that_image()
+<?php
+//ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+
+require_once 'php/database.php';
+$pdo = db_connect();
+
+function catch_that_image()
 {
   global $post, $posts;
   $first_img = '';

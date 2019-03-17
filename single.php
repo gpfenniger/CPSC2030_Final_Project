@@ -6,7 +6,11 @@
     <body>
         <div class="wrapper">
             <?php require_once 'nav.php'; ?>
-            <div>
+            <div class="main">
+                <div class="main-topbar">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+
                 <?php while (have_posts()):
                   the_post();
                   the_content();
