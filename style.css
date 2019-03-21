@@ -11,6 +11,12 @@
       CSS Tricks - Image Thumbnail: https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
       Quora: https://quora.com
     Version: 0.0.1
+
+    Colours {     triadic scheme        old                 light pastel
+      Primary: rgb(39, 116, 85)       rgb(238, 238, 238);   #fff5d7
+      Secondary: rgb(113, 38, 110)
+      Tertiary: rgb(170, 142, 57)
+    }
 */
 
 .main {
@@ -39,19 +45,24 @@
 }
 
 @media (min-width: 460px) {
+  .page-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
   body {
     margin: 0;
     padding: 0;
   }
 
-  .wrapper {
+  main {
     display: grid;
     grid-template-columns: 20% 80%;
     height: 100%;
   }
 
   .main {
-    background-color: rgb(238, 238, 238);
+    background-color: white;
   }
 
   .blog-post {

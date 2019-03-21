@@ -4,8 +4,8 @@
 		<div>
 			<?php require_once 'nav.php'; ?>
 		</div>
-		<div style="background-color: rgb(238, 238, 238);">
-			<div class="row main">
+		<div>
+			<div class="row main page-wrapper">
 				<div class="col-sm-12">
 
 					<?php if (have_posts()):

@@ -18,12 +18,20 @@ nav {
 }
 
 .nav-menu li:hover {
-  background-color: lightblue;
+  background-color: #649f85;
+}
+
+.nav-menu a:hover {
+  color: white;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: black;
+}
+
+.nav-menu a:active {
+  background-color: #965f96;
 }
 
 @media (min-width: 460px) {

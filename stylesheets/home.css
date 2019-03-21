@@ -1,6 +1,6 @@
 .main-wrapper {
   padding-top: 40px;
-  background-color: rgb(238, 238, 238);
+  background-color: white;
   height: 100%;
 }
 
@@ -33,9 +33,13 @@
 }
 
 @media (min-width: 460px) {
-  .main {
+  .post-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .post-wrapper h3 {
+    text-align: center;
   }
 
   .main-topbar {

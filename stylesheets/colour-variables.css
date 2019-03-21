@@ -1,0 +1,19 @@
+:root {
+  --focus-lightest-colour: #a7c6b8;
+  --focus-light-colour: #82af9c;
+  --focus-colour: #649f85;
+  --focus-dark-colour: #478d6f;
+  --focus-darkest-colour: #2b7a58;
+
+  --secondary-lightest-colour: #fff5d7;
+  --secondary-light-colour: #ffefbe;
+  --secondary-colour: #e7d292;
+  --secondary-dark-colour: #ceb568;
+  --secondary-darkest-colour: #b2953f;
+
+  --detail-lightest-colour: #bfa1bf;
+  --detail-light-colour: #a67ca6;
+  --detail-colour: #965f96;
+  --detail-dark-colour: #864386;
+  --detail-darkest-colour: #742974;
+}
