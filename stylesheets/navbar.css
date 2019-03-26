@@ -18,7 +18,7 @@ nav {
 }
 
 .nav-menu li:hover {
-  background-color: #649f85;
+  background-color: #669999;
 }
 
 .nav-menu a:hover {
@@ -30,11 +30,11 @@ nav {
   color: black;
 }
 
-.nav-menu a:active {
-  background-color: #965f96;
-}
-
 @media (min-width: 460px) {
+  .nav-wrapper {
+    padding-top: 40px;
+  }
+
   .nav-menu {
     display: inline;
   }
@@ -42,6 +42,5 @@ nav {
   nav {
     background-color: white;
     height: 100%;
-    padding-top: 40px;
   }
 }

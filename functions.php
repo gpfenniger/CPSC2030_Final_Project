@@ -9,7 +9,9 @@ function style_loader()
     'main-style' => '/style.css',
     'footer-style' => '/stylesheets/footer.css',
     'home-style' => '/stylesheets/home.css',
-    'navbar-style' => '/stylesheets/navbar.css'
+    'navbar-style' => '/stylesheets/navbar.css',
+    'page-specific' => '/stylesheets/page-spec.css',
+    'about-page' => '/stylesheets/about-page.css'
   );
 
   // Loads stylesheets based on the array above

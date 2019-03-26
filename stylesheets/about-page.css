@@ -1,0 +1,10 @@
+.about-person {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-id-18 h3 {
+  background-color: #669999;
+  color: white;
+  padding: 15px;
+}

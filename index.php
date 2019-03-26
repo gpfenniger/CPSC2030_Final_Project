@@ -1,9 +1,11 @@
   <?php get_header(); ?>
   <div class="main-wrapper">
-    <div class="main-topbar">
-      <h3>My Drawings</h3>
-      <p>Filter</p>
-      <p>Sort By</p>
+    <div class="topbar-wrapper sticky-wrapper">
+      <div class="main-topbar">
+        <h3>All Drawings</h3>
+        <p>Filter</p>
+        <p>Sort By</p>
+      </div>
     </div>
     <div class="post-wrapper main posts">
     <?php if (have_posts()):

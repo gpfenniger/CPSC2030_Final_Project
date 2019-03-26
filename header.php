@@ -5,6 +5,6 @@
     <script src="//code.jquery.com/jquery-latest.js"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <main>
   <?php require_once 'nav.php'; ?>

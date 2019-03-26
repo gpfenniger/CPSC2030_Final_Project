@@ -28,4 +28,18 @@ Editing files in wp-content/themes/griffin_pfenniger will modify the theme as it
 
 ## Authors
 
-- **Griffin Pfenniger**
+- **Griffin Pfenniger** : for theme design and scripting
+- **Maya** : for content and artwork
+
+## Work Left Todo
+
+- Create archive file
+- Create search file
+- Improve footer
+- Improve page file
+- Design post page
+- Choose fonts
+- Implement colour scheme
+- Add content
+- Add topbar image
+- Create file for fetching Spotify and Tidal info
