@@ -1,10 +1,13 @@
-.about-person {
-  display: flex;
-  flex-direction: row;
+.page-id-18 h4,
+.page-id-18 p {
+  margin: 10px;
 }
 
-.page-id-18 h3 {
-  background-color: #669999;
-  color: white;
-  padding: 15px;
+.page-id-18 .blog-post-meta {
+  display: none;
+}
+
+.page-id-18 .blog-post {
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
