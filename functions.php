@@ -7,11 +7,16 @@ function style_loader()
 {
   $styles = array(
     'main-style' => '/style.css',
-    'footer-style' => '/stylesheets/footer.css',
     'home-style' => '/stylesheets/home.css',
-    'navbar-style' => '/stylesheets/navbar.css',
     'page-specific' => '/stylesheets/page-spec.css',
-    'about-page' => '/stylesheets/about-page.css'
+    'about-page' => '/stylesheets/about-page.css',
+    'post-style' => '/stylesheets/posts.css',
+    // Navbar Stylesheets
+    'navbar-general' => '/stylesheets/general/nav.css',
+    'navbar-desktop' => '/stylesheets/desktop/nav.css',
+    // Default html tags
+    'general-general' => '/stylesheets/general/general.css',
+    'general-desktop' => '/stylesheets/desktop/general.css'
   );
 
   // Loads stylesheets based on the array above
@@ -84,17 +89,8 @@ function echo_thumbnail()
     echo '" alt="" />';
     echo '</a>';
   }
-  echo '<h3><i>';
+  echo '<p>';
   the_title();
-  echo '</i></h3>';
-  echo '<div class="stat-block">';
-  echo '<p>Likes: 0</p>';
-  echo '<p>Comments: ';
-  get_num_of_comments(get_the_id());
-  if ($post_id != '') {
-    //echo get_the_id();
-    //get_num_of_comments($post_id);
-  }
-  echo '</p></div>';
+  echo '</p>';
 }
 ?>

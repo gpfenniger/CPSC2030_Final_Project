@@ -1,4 +1,4 @@
-<?php require_once 'header.php'; ?>
+<?php get_header(); ?>
 <body>
 	<div class="wrapper">
 		<div>
@@ -17,10 +17,8 @@
      endif; ?>
 
 				</div> <!-- /.col -->
-				<?php require_once 'footer.php'; ?>
-
+				<?php get_footer(); ?>
 			</div> <!-- /.row -->
 		</div>
-
 	</div>
 </body>

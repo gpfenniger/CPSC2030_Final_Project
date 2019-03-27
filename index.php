@@ -2,7 +2,7 @@
   <div class="main-wrapper">
     <div class="topbar-wrapper sticky-wrapper">
       <div class="main-topbar">
-        <h3>All Drawings</h3>
+        <p>All Drawings</p>
         <p>Filter</p>
         <p>Sort By</p>
       </div>

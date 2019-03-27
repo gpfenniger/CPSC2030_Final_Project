@@ -29,18 +29,3 @@ nav {
   text-decoration: none;
   color: black;
 }
-
-@media (min-width: 460px) {
-  .nav-wrapper {
-    padding-top: 40px;
-  }
-
-  .nav-menu {
-    display: inline;
-  }
-
-  nav {
-    background-color: white;
-    height: 100%;
-  }
-}

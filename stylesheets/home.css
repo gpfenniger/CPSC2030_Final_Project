@@ -11,7 +11,8 @@
 }
 
 .main-topbar p {
-  margin: auto;
+  padding: 10px;
+  margin: 10px;
 }
 
 .main .post {
@@ -23,25 +24,19 @@
   width: 100%;
 }
 
-.stat-block {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: auto auto;
-  text-align: center;
-}
-
 @media (min-width: 480px) {
   .post-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .post-wrapper h3 {
+  .post-wrapper p {
     text-align: center;
   }
 
   .main-topbar {
     display: grid;
-    grid-template-columns: max-content 100px 100px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
   }
 }

@@ -1,0 +1,18 @@
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+}
+
+footer {
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+  border-top: solid #226666 3px;
+}

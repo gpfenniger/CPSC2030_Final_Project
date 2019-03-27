@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <?php require_once 'header.php'; ?>
+    <?php get_header(); ?>
 
     <body>
         <div class="wrapper">
@@ -10,13 +10,18 @@
                 <div class="main-topbar">
                     <h1><?php the_title(); ?></h1>
                 </div>
-
-                <?php while (have_posts()):
-                  the_post();
-                  the_content();
-                  get_template_part('template-parts/content/content', 'single');
-                endwhile; ?>
+                <div class="post-content-wrapper">
+                    <?php while (have_posts()):
+                      the_post();
+                      the_content();
+                      get_template_part(
+                        'template-parts/content/content',
+                        'single'
+                      );
+                    endwhile; ?>
+                </div>
             </div>
+            <?php get_footer(); ?>
         </div>
     </body>
 
