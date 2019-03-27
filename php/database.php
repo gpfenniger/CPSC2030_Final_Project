@@ -56,9 +56,7 @@ function get_num_of_comments($id)
     ';';
   $result = $pdo->query($sql);
   while ($row = $result->fetch()) {
-    foreach ($row as $r) {
-      echo $r;
-    }
+    echo $row[0];
   }
 }
 

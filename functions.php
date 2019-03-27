@@ -89,10 +89,11 @@ function echo_thumbnail()
   echo '</i></h3>';
   echo '<div class="stat-block">';
   echo '<p>Likes: 0</p>';
-  echo '<p>Comments:';
+  echo '<p>Comments: ';
+  get_num_of_comments(get_the_id());
   if ($post_id != '') {
-    echo get_the_id();
-    get_num_of_comments($post_id);
+    //echo get_the_id();
+    //get_num_of_comments($post_id);
   }
   echo '</p></div>';
 }
