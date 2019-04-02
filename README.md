@@ -12,8 +12,6 @@ These instructions will get you a copy of the project up and running on your loc
 Make sure you have these things installed in order to be able to use this WordPress custom theme
 
 - XAMPP
-- Node.JS
-- Yarn
 
 After cloning this repo into your htdocs located in your XAMPP's folder, run both the MySQL and Apache servers.
 
@@ -37,8 +35,7 @@ Editing files in wp-content/themes/griffin_pfenniger will modify the theme as it
 - Create search file
 - Improve footer
 - Improve page file
-- Design post page
 - Choose fonts
 - Add content
 - Add topbar image
-- Create file for fetching Spotify and Tidal info
+- Fix nav current page colour so it uses JQuery

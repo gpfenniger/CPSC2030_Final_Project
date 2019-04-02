@@ -1,0 +1,11 @@
+{
+  "name": "griffin-pfenniger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gpfenniger/CPSC2030_Final_Project",
+  "author": "Griffin <pfenniger.griffin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^1.16.4"
+  }
+}

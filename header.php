@@ -7,4 +7,4 @@
 </head>
 <body <?php body_class(); ?>>
   <main>
-  <?php require_once 'nav.php'; ?>
+  <?php require_once 'template-parts/components/nav.php'; ?>

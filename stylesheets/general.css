@@ -17,3 +17,20 @@ footer {
   width: 80%;
   border-top: solid #226666 3px;
 }
+
+@media (min-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%;
+  }
+
+  footer {
+    margin-bottom: 15px;
+  }
+}

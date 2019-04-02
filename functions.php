@@ -3,53 +3,35 @@
 //error_reporting(E_ALL);
 
 // Loads styles and scripts
-function style_loader()
+function load_em_up()
 {
-  $styles = array(
+  $loadables = array(
     'main-style' => '/style.css',
     'home-style' => '/stylesheets/home.css',
-    'page-specific' => '/stylesheets/page-spec.css',
     'about-page' => '/stylesheets/about-page.css',
     'post-style' => '/stylesheets/posts.css',
-    // Navbar Stylesheets
-    'navbar-general' => '/stylesheets/general/nav.css',
-    'navbar-desktop' => '/stylesheets/desktop/nav.css',
-    // Default html tags
-    'general-general' => '/stylesheets/general/general.css',
-    'general-desktop' => '/stylesheets/desktop/general.css'
-  );
-
-  // Loads stylesheets based on the array above
-  // unique name, stylesheet url, dependency array, version number
-  foreach ($styles as $key => $sheet) {
-    wp_enqueue_style(
-      $key,
-      get_template_directory_uri() . $sheet,
-      array(),
-      filemtime(get_template_directory() . $sheet)
-    );
-  }
-}
-
-function script_loader()
-{
-  $scripts = array(
+    'navbar' => '/stylesheets/nav.css',
+    'general' => '/stylesheets/general.css',
+    'colours' => '/stylesheets/colours.css',
+    // Scripts
     'nav-script' => '/js/navbar.js',
-    'post-hook' => '/js/post-hook.js'
+    'post-hook' => '/js/post-hook.js',
+    'search-script' => '/js/search.js'
   );
-  foreach ($scripts as $key => $script) {
-    wp_enqueue_script(
-      $key,
-      get_template_directory_uri() . $script,
-      array(),
-      filemtime(get_template_directory() . $script),
-      true
-    );
+  foreach ($loadables as $key => $loadable) {
+    $uri = get_template_directory_uri() . $loadable;
+    $dir = filemtime(get_template_directory() . $script);
+    if ($loadable[1] == 's') {
+      // for stylesheets
+      wp_enqueue_style($key, $uri, array(), $dir);
+    } elseif ($loadable[1] == 'j') {
+      // for scripts
+      wp_enqueue_script($key, $uri, array(), $dir, true);
+    }
   }
 }
 // calls function on enqueue lifecycle hook
-add_action('wp_enqueue_scripts', 'style_loader');
-add_action('wp_enqueue_scripts', 'script_loader');
+add_action('wp_enqueue_scripts', 'load_em_up');
 
 require_once 'php/database.php';
 $pdo = db_connect();

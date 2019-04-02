@@ -2,9 +2,6 @@
 <body>
 	<div class="wrapper">
 		<div>
-			<?php require_once 'nav.php'; ?>
-		</div>
-		<div>
 			<div class="row main page-wrapper">
 				<div class="col-sm-12">
 
@@ -12,7 +9,7 @@
        while (have_posts()):
          the_post();
 
-         get_template_part('content', get_post_format());
+         get_template_part('template-parts/content/content', get_post_format());
        endwhile;
      endif; ?>
 
