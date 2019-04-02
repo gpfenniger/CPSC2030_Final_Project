@@ -5,9 +5,9 @@
 
 .main-topbar {
   text-align: center;
+  margin: auto;
   width: 80%;
   border-bottom: solid #226666 3px;
-  margin: auto;
 }
 
 .main-topbar p {
@@ -36,7 +36,7 @@
 
   .main-topbar {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 2.5fr 1fr;
     text-align: center;
   }
 }

@@ -8,7 +8,6 @@
             <?php require_once 'nav.php'; ?>
             <div class="main">
                 <div class="main-topbar">
-                    <h1><?php the_title(); ?></h1>
                 </div>
                 <div class="post-content-wrapper">
                     <?php while (have_posts()):
@@ -25,4 +24,15 @@
         </div>
     </body>
 
+    <script>
+        
+    </script>
+
+    <style>
+        .bar { 
+            padding-top: 40px;
+            width: 80%;
+            border-bottom: solid #226666 3px;
+        }
+    </style>
 </html>

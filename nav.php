@@ -6,6 +6,7 @@
                 Home
             </a></li>
             <?php wp_list_pages('&title_li='); ?>
+            <p class="jquery-result"></p>
         </ul>
     </div>
 </nav>

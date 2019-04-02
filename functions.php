@@ -34,7 +34,8 @@ function style_loader()
 function script_loader()
 {
   $scripts = array(
-    'nav-script' => '/js/navbar.js'
+    'nav-script' => '/js/navbar.js',
+    'post-hook' => '/js/post-hook.js'
   );
   foreach ($scripts as $key => $script) {
     wp_enqueue_script(
@@ -93,4 +94,3 @@ function echo_thumbnail()
   the_title();
   echo '</p>';
 }
-?>

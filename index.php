@@ -1,10 +1,14 @@
   <?php get_header(); ?>
+  <div class="search-wrapper">
+    <?php get_search_form(); ?>
+    <button name="exit-search-btn">Exit</button>
+  </div>
   <div class="main-wrapper">
     <div class="topbar-wrapper sticky-wrapper">
       <div class="main-topbar">
         <p>All Drawings</p>
         <p>Filter</p>
-        <p>Sort By</p>
+        <button class="search-btn">Search</button>
       </div>
     </div>
     <div class="post-wrapper main posts">
@@ -30,3 +34,39 @@
     <?php get_footer(); ?>
   </div>
 </body>
+
+<script>
+  $(".search-btn").on("click", function() {
+    $(".search-wrapper").css("display", "block");
+    $(".searchform #s").focus();
+  });
+  $(".search-wrapper button[name='exit-search-btn']").click(function() {
+    $(".search-wrapper").css("display", "none");
+  })
+</script>
+
+<style scoped>
+  .search-btn {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+  }
+
+  .search-btn:hover {
+    color: white;
+    background-color: #407f7f;
+  }
+
+  .search-wrapper {
+        display: none;
+        position: fixed;
+        background-color: yellow;
+        padding: 200px;
+        top: 100px;
+        left: 100px;
+        z-index: 10;
+  }
+</style>

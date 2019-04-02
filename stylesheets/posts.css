@@ -1,13 +1,15 @@
 @media (min-width: 480px) {
   .single .post-content-wrapper {
-    width: 80%;
-    margin: auto;
     padding: 15px;
+    display: grid;
+    grid-template-columns: 30% 70%;
   }
 
-  .single img {
-    width: 40%;
-    margin-left: 30%;
-    margin-right: auto;
+  .single .text-wrapper {
+    padding: 40px;
+  }
+
+  .single .main-topbar {
+    margin-top: 70px;
   }
 }

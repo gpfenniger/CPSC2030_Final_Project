@@ -9,4 +9,8 @@
     grid-template-columns: 20% 80%;
     height: 100%;
   }
+
+  footer {
+    margin-bottom: 15px;
+  }
 }
