@@ -5,6 +5,8 @@ CPSC 2030 Final Project
 
 ## Getting Started
 
+Sorry for the mess in advance
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
@@ -28,14 +30,3 @@ Editing files in wp-content/themes/griffin_pfenniger will modify the theme as it
 
 - **Griffin Pfenniger** : for theme design and scripting
 - **Maya** : for content and artwork
-
-## Work Left Todo
-
-- Create archive file
-- Create search file
-- Improve footer
-- Improve page file
-- Choose fonts
-- Add content
-- Add topbar image
-- Fix nav current page colour so it uses JQuery

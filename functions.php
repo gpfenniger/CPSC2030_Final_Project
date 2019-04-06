@@ -13,10 +13,10 @@ function load_em_up()
     'navbar' => '/stylesheets/nav.css',
     'general' => '/stylesheets/general.css',
     'colours' => '/stylesheets/colours.css',
+    'contact-style' => '/stylesheets/contact-form.css',
     // Scripts
     'nav-script' => '/js/navbar.js',
-    'post-hook' => '/js/post-hook.js',
-    'search-script' => '/js/search.js'
+    'general-scripts' => '/js/general.js'
   );
   foreach ($loadables as $key => $loadable) {
     $uri = get_template_directory_uri() . $loadable;
@@ -33,9 +33,11 @@ function load_em_up()
 // calls function on enqueue lifecycle hook
 add_action('wp_enqueue_scripts', 'load_em_up');
 
+// DATABASE CALLS
 require_once 'php/database.php';
 $pdo = db_connect();
 
+// For image thumbnails
 function catch_that_image()
 {
   global $post, $posts;

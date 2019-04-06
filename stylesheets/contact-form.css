@@ -1,0 +1,41 @@
+.center {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.center form {
+  display: flex;
+  flex-direction: column;
+}
+
+.center h4 {
+  padding: 10px;
+  border-bottom: solid black 1px;
+}
+
+.comment-body {
+  display: none;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: solid black 1px;
+  padding: 5px;
+}
+
+.comment-body button {
+  width: 100px;
+}

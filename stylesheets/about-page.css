@@ -8,7 +8,8 @@
   margin-bottom: 10px;
 }
 
-.page-id-18 .blog-post p {
+.page .blog-post p {
   margin-left: 5%;
   padding: 10px;
+  border-left: solid #003333 3px;
 }

@@ -34,29 +34,3 @@
     <?php get_footer(); ?>
   </div>
 </body>
-
-<style scoped>
-  .search-btn {
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: none;
-  }
-
-  .search-btn:hover {
-    color: white;
-    background-color: #407f7f;
-  }
-
-  .search-wrapper {
-        display: none;
-        position: fixed;
-        background-color: yellow;
-        padding: 200px;
-        top: 100px;
-        left: 100px;
-        z-index: 10;
-  }
-</style>

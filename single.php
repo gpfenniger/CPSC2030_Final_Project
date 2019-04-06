@@ -15,19 +15,16 @@
                     endwhile; ?>
                 </div>
             </div>
-            <?php get_footer(); ?>
+            <div style="margin: auto;" class="bar"></div>
+            <div style="margin: auto; width: 60%; margin-top: 10px;">
+                <?php if (comments_open() || get_comments_number()) {
+                  echo '<p>Number of comments: ';
+                  get_num_of_comments($id);
+                  echo '</p>';
+                  comments_template();
+                } ?>
+                <?php get_footer(); ?>
+            </div>
         </div>
     </body>
-
-    <script>
-        
-    </script>
-
-    <style>
-        .bar { 
-            padding-top: 40px;
-            width: 80%;
-            border-bottom: solid #226666 3px;
-        }
-    </style>
 </html>
